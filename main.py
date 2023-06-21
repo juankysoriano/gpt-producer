@@ -14,6 +14,14 @@ from rich.live import Live
 from rich.panel import Panel
 from rich.progress import BarColumn, Progress, SpinnerColumn, TextColumn
 from scipy.io.wavfile import read
+import tempfile
+
+import librosa
+import numpy as np
+import scipy.io.wavfile as wavfile
+from art import text2art
+from pydub import AudioSegment
+
 
 # Assuming generate_music, gpt_describe, and keyboard2abc are your own modules
 import generate_music
@@ -32,7 +40,6 @@ description = colored_ascii_title + "\n\n"
 # Define Panels
 describe_music_panel = Panel(description, title="Rolling Stones Review")
 generate_music_file_panel = Panel("", title="Generate Music File")
-credits_panel = Panel("", title="Credits")
 
 
 def update_layout(token, live):
@@ -140,11 +147,9 @@ def main():
     layout.split(
         Layout(name="upper", size=40),
         Layout(name="lower", size=10),
-        Layout(name="credits", size=5),
     )
     layout["upper"].update(describe_music_panel)
     layout["lower"].update(generate_music_file_panel)
-    layout["credits"].update(credits_panel)
 
     # Describe music in a thread
     with Live(
@@ -184,13 +189,6 @@ def main():
             live.update(layout)
 
 
-import tempfile
-
-import librosa
-import numpy as np
-import scipy.io.wavfile as wavfile
-from art import text2art
-from pydub import AudioSegment
 
 
 def waveform_to_ascii(file_path, width=70, height=20):

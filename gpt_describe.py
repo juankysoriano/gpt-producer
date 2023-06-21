@@ -7,6 +7,8 @@ from langchain.prompts.chat import (
     SystemMessagePromptTemplate,
 )
 
+OPENAI_API_KEY = ""
+
 PROMPT_CREATE_TEMPLATE = """
 Describe briefly the following piece of music:
 
@@ -47,7 +49,7 @@ def generate_prompt(abc):
         llm=ChatOpenAI(
             temperature=0.5,
             model_name="gpt-4",
-            openai_api_key="YOUR-API-KEY-PREVIOUS-WAS-DELETED",
+            openai_api_key=OPENAI_API_KEY,
         ),
         verbose=False,
         prompt=ChatPromptTemplate.from_messages(
@@ -82,7 +84,7 @@ def describe_music(prompt, abc, callback):
             callbacks=[MyCustomHandler(callback)],
             temperature=0.5,
             model_name="gpt-4",
-            openai_api_key="YOUR-API-KEY-PREVIOUS-WAS-DELETED",
+            openai_api_key=OPENAI_API_KEY,
         ),
         verbose=True,
         prompt=ChatPromptTemplate.from_messages(

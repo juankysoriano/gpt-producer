@@ -1,3 +1,4 @@
+librosa
 langchain
 python-rtmidi --no-binary=python-rtmidi
 mido
@@ -15,3 +16,4 @@ PyObjC
 torch>=2.0
 audiocraft @ git+https://github.com/facebookresearch/audiocraft#egg=audiocraft
 scipy
+art
