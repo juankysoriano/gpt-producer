@@ -30,10 +30,11 @@ GPT-Producer is an experimental project that allows your MIDI device to communic
 
 ## Process Flow
 
-1. Record MIDI events from your MIDI device.
+1. Record MIDI events from your MIDI device as you play.
 2. Convert the information to ABC format, which is then passed to GPT.
-3. **GPT creates a prompt for the MusicGen model.** This is an important step because it means that GPT can reason about the music you just played and then ask MusicGen to generate the music given the prompt.
-4. Meanwhile, GPT generates a creative review as if it was written by "The Rolling Stones Magazine." Think of it as a very creative loading spinner.
+3. **GPT creates a prompt for the MusicGen model.** This is an important step because it means that GPT can reason about the music you just played.
+4. MusicGen to generate the music given the prompt and what you played, which is used for guidance.
+5. Meanwhile, GPT generates a creative review as if it was written by "The Rolling Stones Magazine." Think of it as a very creative loading spinner.
 
 ## License
 
