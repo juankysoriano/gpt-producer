@@ -1,5 +1,7 @@
 # GPT-Producer 🤖🎹🎵🎧
 
+https://github.com/juankysoriano/gpt-producer/assets/7768517/2b70f660-b223-40f9-96ba-9fac796ad4be
+
 GPT-Producer is an experimental project that allows your MIDI device to communicate with GPT, generate music given a prompt, and even generates a creative review written by a simulated "Rolling Stones Magazine" reviewer.
 
 **Disclaimer:** This is not a production ready code. It's a fun illustration of what can be achieved over a weekend! Moreover, the majority of the code and this README have been generated with ChatGPT.
