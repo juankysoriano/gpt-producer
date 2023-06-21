@@ -14,3 +14,4 @@ playsound
 PyObjC
 torch>=2.0
 audiocraft @ git+https://github.com/facebookresearch/audiocraft#egg=audiocraft
+scipy
