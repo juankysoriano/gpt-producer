@@ -47,7 +47,7 @@ def generate_prompt(abc):
         llm=ChatOpenAI(
             temperature=0.5,
             model_name="gpt-4",
-            openai_api_key="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",
+            openai_api_key="YOUR-API-KEY-PREVIOUS-WAS-DELETED",
         ),
         verbose=False,
         prompt=ChatPromptTemplate.from_messages(
@@ -82,7 +82,7 @@ def describe_music(prompt, abc, callback):
             callbacks=[MyCustomHandler(callback)],
             temperature=0.5,
             model_name="gpt-4",
-            openai_api_key="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",
+            openai_api_key="YOUR-API-KEY-PREVIOUS-WAS-DELETED",
         ),
         verbose=True,
         prompt=ChatPromptTemplate.from_messages(
