@@ -19,10 +19,10 @@ GPT-Producer is an experimental project that allows your MIDI device to communic
    sudo apt install ffmpeg
    sudo apt install abcmidi
    ```
+3. **IMPORTANT**: Remember to bring your OpenAI API Key, update `gpt_describe.py` with your key. `//TODO using .env` 
+4. Connect your MIDI device to your computer.
 
-3. Connect your MIDI device to your computer.
-
-4. Run the program with:
+5. Run the program with:
    
    ```
    python main.py
