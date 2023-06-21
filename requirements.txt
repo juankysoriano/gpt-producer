@@ -1,0 +1,15 @@
+langchain
+python-rtmidi --no-binary=python-rtmidi
+mido
+music21
+polling2
+rich
+openai
+pyfiglet
+numpy
+soundfile
+pydub 
+playsound
+PyObjC
+torch>=2.0
+audiocraft @ git+https://github.com/facebookresearch/audiocraft#egg=audiocraft
