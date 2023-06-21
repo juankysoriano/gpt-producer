@@ -1,7 +1,7 @@
 langchain
-mesonpep517
 python-rtmidi --no-binary=python-rtmidi
 mido
+simpleaudio
 music21
 polling2
 rich
